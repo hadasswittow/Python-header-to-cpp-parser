@@ -18,11 +18,9 @@ public:
     void tick(const string str,const unsigned int amount);// increments clock in that amount of minutes/hours
     Time* getClock();
 private:
-
         Time target;
         Time clock;
         MsgPrinter* pprinter;
-
 };
 inline void Timer::tick(){// increments clock in 1 second
     clock+=1;
@@ -60,5 +58,4 @@ void run_timer_1();
 void run_timer_2();
 void run_timer_3();
 void run_timer_4();
-
 #endif //EXE3C__LANGUAGE_MY_TIMER_H
